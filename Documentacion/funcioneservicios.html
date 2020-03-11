@@ -1,0 +1,62 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module funcioneservicios</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>funcioneservicios</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/media/DIURNO/Empresa/funcioneservicios.py">/media/DIURNO/Empresa/funcioneservicios.py</a></font></td></tr></table>
+    <p><tt>Modulo&nbsp;para&nbsp;la&nbsp;gestion&nbsp;de&nbsp;servicios</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="conexion.html">conexion</a><br>
+</td><td width="25%" valign=top><a href="sqlite3.html">sqlite3</a><br>
+</td><td width="25%" valign=top><a href="variables.html">variables</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-bajaservicio"><strong>bajaservicio</strong></a>(cod)</dt><dd><tt>Se&nbsp;encarga&nbsp;de&nbsp;dar&nbsp;de&nbsp;baja&nbsp;un&nbsp;servicio&nbsp;en&nbsp;la&nbsp;base&nbsp;de&nbsp;datos.<br>
+:param&nbsp;cod:&nbsp;Contiene&nbsp;el&nbsp;codigo&nbsp;de&nbsp;servicio.<br>
+:return:&nbsp;No&nbsp;devuelve&nbsp;nada.</tt></dd></dl>
+ <dl><dt><a name="-comprobar"><strong>comprobar</strong></a>(cod)</dt><dd><tt>Obtiene&nbsp;el&nbsp;numero&nbsp;de&nbsp;servicios&nbsp;que&nbsp;tiene&nbsp;una&nbsp;reserva.<br>
+:param&nbsp;cod:&nbsp;Contiene&nbsp;el&nbsp;número&nbsp;de&nbsp;reserva.<br>
+:return:&nbsp;Devuelve&nbsp;el&nbsp;numero&nbsp;de&nbsp;servicios.</tt></dd></dl>
+ <dl><dt><a name="-comprobarservicio"><strong>comprobarservicio</strong></a>(cod)</dt><dd><tt>Obtiene&nbsp;el&nbsp;nombre&nbsp;de&nbsp;los&nbsp;servicios&nbsp;de&nbsp;una&nbsp;determinada&nbsp;reserva<br>
+:param&nbsp;cod:&nbsp;Contiene&nbsp;el&nbsp;código&nbsp;de&nbsp;reserva.<br>
+:return:&nbsp;Devuelve&nbsp;un&nbsp;listado&nbsp;con&nbsp;los&nbsp;nombres&nbsp;de&nbsp;los&nbsp;servicios.</tt></dd></dl>
+ <dl><dt><a name="-insertarserv"><strong>insertarserv</strong></a>(fila)</dt><dd><tt>Inserta&nbsp;un&nbsp;servicio&nbsp;en&nbsp;la&nbsp;base&nbsp;de&nbsp;datos<br>
+:param&nbsp;fila:&nbsp;contiene&nbsp;los&nbsp;datos&nbsp;del&nbsp;servicio(codreserva,concepto&nbsp;y&nbsp;precio)<br>
+:return:no&nbsp;devuelve&nbsp;nada</tt></dd></dl>
+ <dl><dt><a name="-limpiarentry"><strong>limpiarentry</strong></a>(fila)</dt><dd><tt>Limpia&nbsp;los&nbsp;entry.<br>
+:param&nbsp;fila:&nbsp;contiene&nbsp;los&nbsp;entry.<br>
+:return:&nbsp;No&nbsp;devuelve&nbsp;nada.</tt></dd></dl>
+ <dl><dt><a name="-listadoserv"><strong>listadoserv</strong></a>(cod)</dt><dd><tt>Obtiene&nbsp;todos&nbsp;los&nbsp;datos&nbsp;de&nbsp;los&nbsp;servicios&nbsp;para&nbsp;cargarlo&nbsp;en&nbsp;el&nbsp;treeview.<br>
+:param&nbsp;cod:&nbsp;Contiene&nbsp;el&nbsp;codigo&nbsp;de&nbsp;reserva.<br>
+:return:&nbsp;No&nbsp;devuelve&nbsp;nada.</tt></dd></dl>
+ <dl><dt><a name="-listarserv"><strong>listarserv</strong></a>(cod)</dt><dd><tt>Obtiene<br>
+:param&nbsp;cod:&nbsp;contiene&nbsp;el&nbsp;codigo&nbsp;de&nbsp;reserva<br>
+:return:&nbsp;Devuelve&nbsp;un&nbsp;listado&nbsp;con&nbsp;los&nbsp;datos&nbsp;obtenidos</tt></dd></dl>
+ <dl><dt><a name="-servicioSA"><strong>servicioSA</strong></a>(cod)</dt><dd><tt>Borra&nbsp;todos&nbsp;los&nbsp;servicios&nbsp;de&nbsp;una&nbsp;reserva&nbsp;para&nbsp;ponerla&nbsp;en&nbsp;solo&nbsp;alojamiento.<br>
+:param&nbsp;cod:&nbsp;Contiene&nbsp;el&nbsp;codigo&nbsp;de&nbsp;reserva.<br>
+:return:&nbsp;No&nbsp;devuelve&nbsp;nada.</tt></dd></dl>
+ <dl><dt><a name="-serviciosreser"><strong>serviciosreser</strong></a>(cod)</dt><dd><tt>Obtiene&nbsp;el&nbsp;concepto&nbsp;y&nbsp;el&nbsp;precio&nbsp;de&nbsp;una&nbsp;determinada&nbsp;reserva.<br>
+:param&nbsp;cod:&nbsp;Contiene&nbsp;el&nbsp;código&nbsp;de&nbsp;reserva.<br>
+:return:&nbsp;Devuelve&nbsp;un&nbsp;listado&nbsp;con&nbsp;los&nbsp;datos&nbsp;obtenidos.</tt></dd></dl>
+ <dl><dt><a name="-verprecio"><strong>verprecio</strong></a>(nom)</dt><dd><tt>Obtiene&nbsp;el&nbsp;precio&nbsp;de&nbsp;un&nbsp;determinado&nbsp;servicio.<br>
+:param&nbsp;nom:&nbsp;Contiene&nbsp;el&nbsp;concepto&nbsp;del&nbsp;servicio.<br>
+:return:&nbsp;Devuelve&nbsp;el&nbsp;precio&nbsp;del&nbsp;concepto.</tt></dd></dl>
+</td></tr></table>
+</body></html>

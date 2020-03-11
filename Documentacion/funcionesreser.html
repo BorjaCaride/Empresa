@@ -1,0 +1,59 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module funcionesreser</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>funcionesreser</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/media/DIURNO/Empresa/funcionesreser.py">/media/DIURNO/Empresa/funcionesreser.py</a></font></td></tr></table>
+    <p><tt>Módulo&nbsp;que&nbsp;gestiona&nbsp;las&nbsp;reservas.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="conexion.html">conexion</a><br>
+</td><td width="25%" valign=top><a href="sqlite3.html">sqlite3</a><br>
+</td><td width="25%" valign=top><a href="variables.html">variables</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-bajareserva"><strong>bajareserva</strong></a>(cod)</dt><dd><tt>Da&nbsp;de&nbsp;baja&nbsp;una&nbsp;reserva&nbsp;en&nbsp;la&nbsp;base&nbsp;de&nbsp;datos&nbsp;y&nbsp;pone&nbsp;el&nbsp;switch&nbsp;de&nbsp;la&nbsp;habitación&nbsp;a&nbsp;libre.<br>
+:param&nbsp;cod:&nbsp;Contiene&nbsp;el&nbsp;codigo&nbsp;de&nbsp;reserva.<br>
+:return:&nbsp;No&nbsp;devuelve&nbsp;nada.</tt></dd></dl>
+ <dl><dt><a name="-buscarapelcli"><strong>buscarapelcli</strong></a>(dni)</dt><dd><tt>Busca&nbsp;en&nbsp;la&nbsp;base&nbsp;de&nbsp;datos&nbsp;el&nbsp;apellido&nbsp;de&nbsp;un&nbsp;determinado&nbsp;cliente.<br>
+:param&nbsp;dni:&nbsp;Contiene&nbsp;el&nbsp;dni&nbsp;del&nbsp;cliente.<br>
+:return:&nbsp;Devuelve&nbsp;el&nbsp;apellido&nbsp;del&nbsp;cliente.</tt></dd></dl>
+ <dl><dt><a name="-buscarnomecli"><strong>buscarnomecli</strong></a>(dni)</dt><dd><tt>Busca&nbsp;en&nbsp;la&nbsp;base&nbsp;de&nbsp;datos&nbsp;el&nbsp;nombre&nbsp;de&nbsp;un&nbsp;determinado&nbsp;cliente.<br>
+:param&nbsp;dni:&nbsp;Contiene&nbsp;el&nbsp;dni&nbsp;del&nbsp;cliente.<br>
+:return:&nbsp;Devuelve&nbsp;el&nbsp;nombre&nbsp;del&nbsp;cliente.</tt></dd></dl>
+ <dl><dt><a name="-buscarpreciohab"><strong>buscarpreciohab</strong></a>(numhab)</dt><dd><tt>Busca&nbsp;en&nbsp;la&nbsp;base&nbsp;de&nbsp;datos&nbsp;el&nbsp;precio&nbsp;de&nbsp;una&nbsp;determinada&nbsp;habitación.<br>
+:param&nbsp;numhab:&nbsp;Contiene&nbsp;el&nbsp;número&nbsp;de&nbsp;la&nbsp;habitación.<br>
+:return:&nbsp;Devuelve&nbsp;el&nbsp;precio&nbsp;de&nbsp;la&nbsp;habitación.</tt></dd></dl>
+ <dl><dt><a name="-calculardias"><strong>calculardias</strong></a>()</dt><dd><tt>Valida&nbsp;que&nbsp;la&nbsp;fecha&nbsp;de&nbsp;salida&nbsp;sea&nbsp;posterior&nbsp;a&nbsp;la&nbsp;de&nbsp;entrada&nbsp;y&nbsp;calcula&nbsp;el&nbsp;número&nbsp;de&nbsp;noches.<br>
+:return:&nbsp;No&nbsp;devuelve&nbsp;nada.</tt></dd></dl>
+ <dl><dt><a name="-insertares"><strong>insertares</strong></a>(fila)</dt><dd><tt>Inserta&nbsp;una&nbsp;reserva&nbsp;en&nbsp;la&nbsp;base&nbsp;de&nbsp;datos.<br>
+:param&nbsp;fila:&nbsp;Contiene&nbsp;los&nbsp;datos&nbsp;de&nbsp;la&nbsp;reserva.<br>
+:return:&nbsp;No&nbsp;devuelve&nbsp;nada.</tt></dd></dl>
+ <dl><dt><a name="-limpiarentry"><strong>limpiarentry</strong></a>(fila)</dt><dd><tt>Limpia&nbsp;los&nbsp;entrys&nbsp;de&nbsp;las&nbsp;reservas.<br>
+:param&nbsp;fila:&nbsp;Contiene&nbsp;los&nbsp;entrys.<br>
+:return:&nbsp;No&nbsp;devuelve&nbsp;nada.</tt></dd></dl>
+ <dl><dt><a name="-listadores"><strong>listadores</strong></a>()</dt><dd><tt>Lista&nbsp;todas&nbsp;las&nbsp;reservas&nbsp;y&nbsp;las&nbsp;muestra&nbsp;en&nbsp;el&nbsp;treeview<br>
+:return:&nbsp;No&nbsp;devuelve&nbsp;nada.</tt></dd></dl>
+ <dl><dt><a name="-listares"><strong>listares</strong></a>()</dt><dd><tt>Lista&nbsp;las&nbsp;reservas<br>
+:return:&nbsp;Devuelve&nbsp;una&nbsp;lista&nbsp;con&nbsp;todas&nbsp;las&nbsp;reservas.</tt></dd></dl>
+ <dl><dt><a name="-versilibre"><strong>versilibre</strong></a>(numhab)</dt><dd><tt>Comprueba&nbsp;si&nbsp;una&nbsp;determinada&nbsp;habitación&nbsp;esta&nbsp;libre&nbsp;o&nbsp;no.<br>
+:param&nbsp;numhab:&nbsp;Contiene&nbsp;el&nbsp;número&nbsp;de&nbsp;habitación.<br>
+:return:&nbsp;Devuelve&nbsp;True&nbsp;si&nbsp;esta&nbsp;libre,&nbsp;False&nbsp;si&nbsp;esta&nbsp;ocupada.</tt></dd></dl>
+</td></tr></table>
+</body></html>

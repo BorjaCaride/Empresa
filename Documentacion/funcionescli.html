@@ -1,0 +1,67 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module funcionescli</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>funcionescli</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/media/DIURNO/Empresa/funcionescli.py">/media/DIURNO/Empresa/funcionescli.py</a></font></td></tr></table>
+    <p><tt>Módulo&nbsp;que&nbsp;gestiona&nbsp;los&nbsp;clientes.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="conexion.html">conexion</a><br>
+</td><td width="25%" valign=top><a href="sqlite3.html">sqlite3</a><br>
+</td><td width="25%" valign=top><a href="variables.html">variables</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-bajacli"><strong>bajacli</strong></a>(dni)</dt><dd><tt>Método&nbsp;que&nbsp;se&nbsp;encarga&nbsp;de&nbsp;dar&nbsp;de&nbsp;baja&nbsp;un&nbsp;cliente.-<br>
+Con&nbsp;el&nbsp;dni&nbsp;que&nbsp;se&nbsp;le&nbsp;pasa&nbsp;busca&nbsp;el&nbsp;cliente&nbsp;en&nbsp;la&nbsp;base&nbsp;de&nbsp;datos&nbsp;y&nbsp;lo&nbsp;borra.<br>
+&nbsp;<br>
+:param&nbsp;dni:&nbsp;contiene&nbsp;el&nbsp;dni&nbsp;del&nbsp;cliente.<br>
+:return:&nbsp;no&nbsp;devuelve&nbsp;nada.</tt></dd></dl>
+ <dl><dt><a name="-insertarcli"><strong>insertarcli</strong></a>(fila)</dt><dd><tt>Método&nbsp;que&nbsp;se&nbsp;encarga&nbsp;de&nbsp;insertar&nbsp;un&nbsp;cliente&nbsp;nuevo&nbsp;en&nbsp;la&nbsp;base&nbsp;de&nbsp;datos<br>
+&nbsp;<br>
+:param&nbsp;fila:&nbsp;contiene&nbsp;los&nbsp;datos&nbsp;del&nbsp;cliente.<br>
+:return:&nbsp;no&nbsp;devuelve&nbsp;nada.</tt></dd></dl>
+ <dl><dt><a name="-limpiarentry"><strong>limpiarentry</strong></a>(fila)</dt><dd><tt>Método&nbsp;que&nbsp;se&nbsp;encarga&nbsp;de&nbsp;limpiar&nbsp;los&nbsp;entry&nbsp;de&nbsp;la&nbsp;ventana&nbsp;de&nbsp;clientes<br>
+Se&nbsp;encarga&nbsp;de&nbsp;recorrer&nbsp;todos&nbsp;los&nbsp;entry&nbsp;y&nbsp;vaciarlos.<br>
+:param&nbsp;fila:&nbsp;contiene&nbsp;los&nbsp;datos.<br>
+:return:&nbsp;no&nbsp;devuelve&nbsp;nada.</tt></dd></dl>
+ <dl><dt><a name="-listadocli"><strong>listadocli</strong></a>(listclientes)</dt><dd><tt>Método&nbsp;que&nbsp;lista&nbsp;todos&nbsp;los&nbsp;clientes&nbsp;de&nbsp;la&nbsp;base&nbsp;de&nbsp;datos&nbsp;y&nbsp;los&nbsp;añade&nbsp;al&nbsp;treeview&nbsp;de&nbsp;la&nbsp;ventana&nbsp;de&nbsp;clientes.<br>
+&nbsp;<br>
+:param&nbsp;listclientes:&nbsp;contiene&nbsp;la&nbsp;lista&nbsp;de&nbsp;clientes.<br>
+:return:&nbsp;añade&nbsp;en&nbsp;el&nbsp;tree&nbsp;los&nbsp;clientes&nbsp;que&nbsp;hay&nbsp;en&nbsp;la&nbsp;bd.</tt></dd></dl>
+ <dl><dt><a name="-listar"><strong>listar</strong></a>()</dt><dd><tt>Metodo&nbsp;que&nbsp;lista&nbsp;a&nbsp;todos&nbsp;los&nbsp;clientes&nbsp;que&nbsp;se&nbsp;encuentran&nbsp;en&nbsp;la&nbsp;base&nbsp;de&nbsp;datos.<br>
+&nbsp;<br>
+:return:&nbsp;devuelve&nbsp;una&nbsp;lista&nbsp;con&nbsp;todos&nbsp;los&nbsp;clientes.</tt></dd></dl>
+ <dl><dt><a name="-modifcli"><strong>modifcli</strong></a>(registro, cod)</dt><dd><tt>Este&nbsp;método&nbsp;se&nbsp;encarga&nbsp;de&nbsp;modificar&nbsp;un&nbsp;determinado&nbsp;cliente.<br>
+Se&nbsp;busca&nbsp;el&nbsp;cliente&nbsp;por&nbsp;el&nbsp;id&nbsp;en&nbsp;la&nbsp;base&nbsp;de&nbsp;datos&nbsp;y&nbsp;se&nbsp;vuelven&nbsp;a&nbsp;guardar&nbsp;todos&nbsp;los&nbsp;campos.<br>
+&nbsp;<br>
+:param&nbsp;registro:&nbsp;contiene&nbsp;los&nbsp;datos&nbsp;del&nbsp;cliente.<br>
+:param&nbsp;cod:&nbsp;contiene&nbsp;el&nbsp;codigo&nbsp;del&nbsp;cliente.<br>
+:return:&nbsp;no&nbsp;devuelve&nbsp;nada.</tt></dd></dl>
+ <dl><dt><a name="-selectcli"><strong>selectcli</strong></a>(dni)</dt><dd><tt>Método&nbsp;que&nbsp;busca&nbsp;en&nbsp;la&nbsp;base&nbsp;de&nbsp;datos&nbsp;un&nbsp;cliente&nbsp;por&nbsp;el&nbsp;dni&nbsp;y&nbsp;recoge&nbsp;el&nbsp;id.<br>
+&nbsp;<br>
+:param&nbsp;dni:&nbsp;contiene&nbsp;el&nbsp;dni&nbsp;del&nbsp;cliente.<br>
+:return:&nbsp;devuelve&nbsp;los&nbsp;datos&nbsp;del&nbsp;cliente.</tt></dd></dl>
+ <dl><dt><a name="-validoDNI"><strong>validoDNI</strong></a>(dni)</dt><dd><tt>Método&nbsp;para&nbsp;validar&nbsp;un&nbsp;dni.<br>
+Se&nbsp;encarga&nbsp;de&nbsp;verificar&nbsp;si&nbsp;el&nbsp;dni&nbsp;introducido&nbsp;por&nbsp;el&nbsp;usuario&nbsp;es&nbsp;válido,&nbsp;comprobando&nbsp;su&nbsp;longitud(9)&nbsp;y&nbsp;que&nbsp;al&nbsp;final&nbsp;tenga&nbsp;letra.<br>
+&nbsp;<br>
+:param&nbsp;dni:&nbsp;contiene&nbsp;el&nbsp;dni&nbsp;del&nbsp;usuario.<br>
+:return:&nbsp;si&nbsp;el&nbsp;dni&nbsp;es&nbsp;valido&nbsp;True,&nbsp;si&nbsp;el&nbsp;dni&nbsp;no&nbsp;es&nbsp;valido&nbsp;False.</tt></dd></dl>
+</td></tr></table>
+</body></html>
